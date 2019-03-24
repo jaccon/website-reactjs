@@ -58,29 +58,26 @@ const Header = () => (
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link scroll" href="#contact"> Rádio Online </a>
+                            <a className="nav-link" href="/radio"> Rádio Online </a>
                         </li>
 
                         <li className="nav-item">
                             <a className="nav-link scroll" href="#contact"> Contato </a>
                         </li>
-
-                       
-
                     </ul>
                 </nav>
 
-        <div className="side-footer text-white w-100">
-                <ul className="social-icons-simple">
-                    <li><a href="https://www.linkedin.com/in/jaccon/"> <i class="fab fa-linkedin-in"></i> </a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=+5511955696541&text=Ol%C3%A1%20Andr%C3%A9"> <i class="fab fa-whatsapp"></i> </a></li>
-                    <li><a href="https://github.com/jaccon?tab=repositories" target="_blank"> <i class="fab fa-github"></i> </a></li>
-                </ul>
-                <p className="text-white">&copy; 2019 André Jaccon - Build with ReactJS </p>
+                <div className="side-footer text-white w-100">
+                        <ul className="social-icons-simple">
+                            <li><a href="https://www.linkedin.com/in/jaccon/"> <i className="fab fa-linkedin-in"></i> </a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=+5511955696541&text=Ol%C3%A1%20Andr%C3%A9"> <i className="fab fa-whatsapp"></i> </a></li>
+                            <li><a href="https://github.com/jaccon?tab=repositories" target="_blank"> <i className="fab fa-github"></i> </a></li>
+                        </ul>
+                        <p className="text-white">&copy; 2019 André Jaccon - Build with ReactJS </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <a id="close_side_menu" href="javascript:void(0);"></a>
+                <a id="close_side_menu" href="javascript:void(0);"></a>
 
     </header>
 )
