@@ -15,7 +15,7 @@ const Header = () => (
 
                 <div className="collapse navbar-collapse" id="wexim">
                     <div className="navbar-nav ml-auto">
-                        <a className="nav-link scroll" href="#home"> Principal </a>
+                        <a className="nav-link scroll" href="#home"> Home </a>
                         <a className="nav-link scroll" href="#about"> Sobre mim</a>
                         <a className="nav-link scroll" href="#projetos"> Projetos </a>
                         <a className="nav-link" href="https://github.com/jaccon?tab=repositories" target="_blank"> Github </a>

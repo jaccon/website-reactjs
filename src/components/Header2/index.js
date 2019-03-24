@@ -13,7 +13,7 @@ const Header2 = () => (
 
                 <div className="collapse navbar-collapse" id="wexim">
                         <div className="navbar-nav ml-auto">
-                        <a className="nav-link " href="/#home"> Principal </a>
+                        <a className="nav-link " href="/#home"> Home </a>
                         <a className="nav-link " href="/#about"> Sobre mim</a>
                         <a className="nav-link " href="/#projetos"> Projetos </a>
                         <a className="nav-link" href="https://github.com/jaccon?tab=repositories" target="_blank"> Github </a>

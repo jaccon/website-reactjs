@@ -10,7 +10,7 @@ const Sidemenu = () => (
                 <nav className="side-nav w-100">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link scroll" href="#home"> André Jaccon </a>
+                            <a className="nav-link scroll" href="#home"> Home </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link scroll" href="#about"> Sobre mim </a>

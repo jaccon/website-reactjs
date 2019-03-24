@@ -4256,8 +4256,12 @@ header a{
 
 .boxPlayer {
     background: #000;
+    background: url('../images/radio-bg-page.jpg');
+    background-position: center;
+    background-size: cover;
     height:80vh;
     /* border-radius: 2em; */
+
 }
 .boxPlayerContent{
 }

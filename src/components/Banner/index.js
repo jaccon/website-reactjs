@@ -21,10 +21,10 @@ const Content = () => (
                                 <br/> Filming the entire process on YouTube.
                             </h3>
                             <p className="social-icons">
-                                <a href="https://www.youtube.com/user/jaccon" target="_blank"> <i class="fab fa-youtube"></i> </a>
-                                <a href="https://www.linkedin.com/in/jaccon/" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-                                <a href="https://api.whatsapp.com/send?phone=+5511955696541&text=Ol%C3%A1%20Andr%C3%A9" target="_blank"> <i class="fab fa-whatsapp"></i> </a>
-                                <a href="https://github.com/jaccon?tab=repositories" target="_blank" > <i class="fab fa-github"></i> </a>
+                                <a href="https://www.youtube.com/user/jaccon" target="_blank"> <i className="fab fa-youtube"></i> </a>
+                                <a href="https://www.linkedin.com/in/jaccon/" target="_blank"> <i className="fab fa-linkedin-in"></i> </a>
+                                <a href="https://api.whatsapp.com/send?phone=+5511955696541&text=Ol%C3%A1%20Andr%C3%A9" target="_blank"> <i className="fab fa-whatsapp"></i> </a>
+                                <a href="https://github.com/jaccon?tab=repositories" target="_blank" > <i className="fab fa-github"></i> </a>
                             </p>
                             <img src={img01} alt="Jaccon Website" style={divStyle1} />
                         </div>
