@@ -4249,3 +4249,15 @@ header a{
     color: #fff;
     margin-right: 0.2em;
 }
+
+.header2 {
+    background: -webkit-linear-gradient(left, #7202bb 2%, #3264f5 82%);
+}
+
+.boxPlayer {
+    background: #000;
+    height:80vh;
+    /* border-radius: 2em; */
+}
+.boxPlayerContent{
+}
