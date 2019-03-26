@@ -1,5 +1,8 @@
 import axios from 'axios';
+import config from '../config/config';
 
-const radio_api = axios.create({ baseURL: 'http://cloud2.cdnseguro.com:23538/stats?sid=1&my_rand=0.222222'});
+const radio_api_url = config.api_radio;
+const radio_api = axios.create({ baseURL: radio_api_url});
+console.log(`Loading radio API from ${radio_api_url}`)
 
 export default radio_api;

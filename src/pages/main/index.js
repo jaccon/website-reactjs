@@ -9,6 +9,7 @@ import LastJobs from '../../components/LastJobs';
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 import Loader from '../../components/Loader';
+import NewsSpot from '../../components/News';
 
 export default class Main extends Component {
     render() {
@@ -19,6 +20,7 @@ export default class Main extends Component {
                 <Banner/>
                 <About/>
                 <Counter/>
+                <NewsSpot/>
                 <Project/>
                 <LastJobs/>
                 <Contact/>

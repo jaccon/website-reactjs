@@ -1,5 +1,4 @@
 import React from 'react';
-
 import img01 from '../../assets/images/img-app-01.jpg'; 
 
 const divStyle1 = {
