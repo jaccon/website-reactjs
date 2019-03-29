@@ -4265,3 +4265,14 @@ header a{
 }
 .boxPlayerContent{
 }
+
+.post-cards {
+    border: 1px #e3e3e3 solid;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 5px 5px #e3e3e3;
+}
+
+.post-cards a{
+    text-decoration: none !important;
+}

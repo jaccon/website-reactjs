@@ -26,7 +26,7 @@ const Header = () => (
                     </div>
                 </div>
 
-                <a href className="d-inline-block sidemenu_btn" id="sidemenu_toggle" 
+                <a href ={undefined} className="d-inline-block sidemenu_btn" id="sidemenu_toggle" 
                     rel="noopener noreferrer">
                     <span></span>
                     <span></span>
