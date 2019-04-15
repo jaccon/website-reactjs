@@ -1,7 +1,28 @@
-import React from 'react';
+import React, { Component} from 'react';
+import github_api from '../../services/github_api';
+import moment from 'moment';
 
-const Projects = () => (
-    <section className="content" id="projetos" >
+export default class NewsSpot extends Component {
+
+    state = {
+        repositories: []
+    };
+
+    componentDidMount() {
+        this.loadRepositories();
+    }
+
+    loadRepositories = async () => {
+
+        const response = await github_api.get();
+        this.setState({ repositories: response.data });
+        
+    }
+
+    render() {
+
+        return (
+            <section className="content" id="projetos" >
             <div className="container">
                 <div className="row">
 
@@ -17,25 +38,16 @@ const Projects = () => (
 
                     <div className="col-lg-6 wow fadeInRight">
                         <ul>
-                            <li className="mb-4"> <strong> <a href="https://github.com/jaccon/SudoTOuchID"> Sudo TouchID for MacOS </a> </strong> <br/> 
-                                Habilita a autênticação via touchID no terminal do macOS</li>
-
-                            <li className="mb-4"> <strong> <a href="https://github.com/jaccon/VSCodeBackup"> VSCode Backup </a> </strong> <br/> 
-                                Funcionalidade para backup de configurações do edito VSCode para Mac</li>
-
-                            <li className="mb-4"> <strong> <a href="https://github.com/jaccon/VSCodeBackup"> jTalk </a> </strong> <br/> 
-                                Script simples para abertura de comunicação via porta TCP utilizando Python </li>
-
-                            <li className="mb-4"> <strong> <a href="https://github.com/jaccon/VSCodeBackup"> Site Shrink </a> </strong> <br/> 
-                                Script Python para backup de estruturas HTML remotas </li>
-
-                            <li className="mb-4"> <strong> <a href="https://github.com/jaccon/VSCodeBackup"> Hostmon </a> </strong> <br/> 
-                                Script Python monitoramento de servidores </li>
+                            {this.state.repositories.map(repo => (
+                                <li className="mb-4" key={repo.id}> <strong> <a href={repo.html_url} target='_blank' rel='noopener noreferrer'> {repo.name} </a> </strong> <br/>
+                                    Atualizado em: {moment(repo.pushed_at).format("DD/MM/YYYY")} <br/> {repo.description} </li>
+                            )) }
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-);
+        )
+    }
+};
 
-export default Projects;

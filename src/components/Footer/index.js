@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../../config/config'
 
 const Footer = () => (
     <section className="background-contato text-center text-white">
@@ -13,7 +14,7 @@ const Footer = () => (
                             <li><a href="https://github.com/jaccon?tab=repositories" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> </a></li>
                         </ul>
                     </div>
-                    <p className="company-about fadeIn text-white">© 2019 André Jaccon <br/> Build with ReactJS </p>
+                    <p className="company-about fadeIn text-white"> © 2019 André Jaccon <br/> Release Version: {config.bundle_version}  <br/> Build with ReactJS </p>
                 </div>
             </div>
         </div>
